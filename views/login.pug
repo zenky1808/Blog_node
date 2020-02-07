@@ -1,0 +1,16 @@
+extends ./layout/header
+
+block content
+	form(method = "POST")
+		.form-group
+			label(for="email") 
+				b Email
+			input#email.form-control(type = "text" ,name = "email", 
+			value = values ? values.email :"")
+			label(for="password") 
+				b Password
+			input#password.form-control(type = "password" ,name = "password",
+			 value = values ? values.password : "")
+		button.btn.btn-primary Login
+
+block footer

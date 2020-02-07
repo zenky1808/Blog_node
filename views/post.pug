@@ -1,0 +1,12 @@
+extends ./layout/header
+
+block content
+    form.post-form(action = "#" ,method = "POST")
+        .form-group.form-post
+            label(for='title') 
+                h2 Title
+            input#title.form-control(type='text', placeholder='')
+            h2 Content
+            textarea.content-post
+        button.btn.btn-primary Post
+block footer
